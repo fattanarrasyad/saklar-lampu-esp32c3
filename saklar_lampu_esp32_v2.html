@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamp Controller</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            background-color: rgb(135, 123, 243);
+            width: 100%;
+            min-height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+
+        .channel1 {
+            margin: 1rem;
+            padding: .4rem 0 .3rem 0;
+            border: solid 3px #f0f0f0;
+            border-radius: 50px;
+            background-color: tomato;
+            margin-bottom: 2rem;
+            border-top: none;
+        }
+
+        .led1 {
+            padding: .4rem 1.5rem .1rem 1.5rem;
+            background-color: rgb(240, 240, 240, .6);
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            border: solid 1px #f0f0f0;
+            color: #0f0f0f;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="channel1" id="channel1">
+            <a class="led1" id="led1" href="#">OFF</a>
+        </div>
+        <div class="channel2">
+            <a class="led2" href="#">OFF</a>
+        </div>
+    </div>
+
+    <script>
+        const channel1 = document.getElementById("channel1");
+        const led1 = document.getElementById("led1");
+
+        let led1CurrentState = "off";
+
+
+    </script>
+
+</body>
+
+</html>
